@@ -48,6 +48,19 @@ select count(*), PremiseCity, PremiseState from licensees group by PremiseCity, 
 173|COLORADO SPRINGS|CO
 ```
 
+#### Question
+Which town in North Dakota has the most federal firearms licensees?
+
+##### Query
+```
+select count(*), PremiseCity, PremiseState from licensees where PremiseState = "ND" group by PremiseCity, PremiseState order by count(*) Desc limit 1;
+```
+
+##### Response
+```
+41|BISMARCK|ND
+```
+
 ### To Do
 * Geocode each licensee using the `Premise` address attributes
 * Export the geocoded results as GeoJSON for visualization
