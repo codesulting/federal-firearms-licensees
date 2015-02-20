@@ -3,6 +3,7 @@
 
 ### Workflow
 * Create a SQLite database and with a `licensees` table
+`touch dbFFLicensees.sqlite`
 * Parse txt file and load each row into the SQLite database
 * Geocode each licensee using the `Premise` address attributes
 
