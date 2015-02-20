@@ -61,6 +61,22 @@ select count(*), PremiseCity, PremiseState from licensees where PremiseState = "
 41|BISMARCK|ND
 ```
 
+#### Question
+Which 3 mailing addresses have registered the most federal firearms licenses?
+
+##### Query
+```
+select count(*), MailStreet, MailCity, MailState from licensees group by MailStreet, MailCity, MailState order by count(*) Desc limit 3;
+```
+
+##### Response
+```
+1264|702 SW 8TH ST|BENTONVILLE|AR
+632|702 SW 8TH ST DEPT 8916|BENTONVILLE|AR
+341|PO BOX 92088|LOS ANGELES|CA
+```
+(Walmart, Walmart and Big 5 Sporting Goods)
+
 ### To Do
 * Geocode each licensee using the `Premise` address attributes
 * Export the geocoded results as GeoJSON for visualization
