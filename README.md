@@ -5,8 +5,10 @@
 * Create a SQLite database and with a `licensees` table
 ```
 touch dbFFLicensees.sqlite
+sqlite3 dbFFLicensees.sqlite
+sqlite3 dbFFLicensees.sqlite <createTable.txt
 ```
-* Parse txt file and load each row into the SQLite database
+* Parse the txt file and load each row into the SQLite database
 * Geocode each licensee using the `Premise` address attributes
 
 ### Data
