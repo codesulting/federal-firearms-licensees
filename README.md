@@ -32,7 +32,7 @@ select count(PremiseState), PremiseState from licensees group by PremiseState or
 ```
 
 #### Question
-Which 5 U.S. cities have the most federal firearms licensees
+Which 5 U.S. cities have the most federal firearms licensees?
 
 ##### Query
 ```
