@@ -1,19 +1,6 @@
 # Analyzing Federal Firearms Licensee Data
 
 
-### Workflow
-* Create a SQLite database with a `licensees` table
-```
-touch dbFFLicensees.sqlite
-sqlite3 dbFFLicensees.sqlite
-sqlite3 dbFFLicensees.sqlite <createTable.txt
-```
-* Parse the txt file and load each row into the SQLite database
-```
-python csv2sqlite.py
-```
-* Explore the data with SQLite queries
-
 ### Basic Analysis
 #### Question
 Which 5 U.S. states have the most federal firearms licensees?
@@ -77,9 +64,25 @@ select count(*), MailStreet, MailCity, MailState from licensees group by MailStr
 ```
 (Walmart, Walmart and Big 5 Sporting Goods)
 
+
+### Workflow
+* Create a SQLite database with a `licensees` table
+```
+touch dbFFLicensees.sqlite
+sqlite3 dbFFLicensees.sqlite
+sqlite3 dbFFLicensees.sqlite <createTable.txt
+```
+* Parse the txt file and load each row into the SQLite database
+```
+python csv2sqlite.py
+```
+* Explore the data with SQLite queries
+
+
 ### To Do
 * Geocode each licensee using the `Premise` address attributes
 * Export the geocoded results as GeoJSON for visualization
+
 
 ### Data
 * Source: [Listing of Federal Firearms Licensees](http://www.atf.gov/content/firearms/firearms-industry/listing-FFLs)
