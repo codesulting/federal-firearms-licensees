@@ -87,3 +87,23 @@ python csv2sqlite.py
 ### Data
 * Source: [Listing of Federal Firearms Licensees](http://www.atf.gov/content/firearms/firearms-industry/listing-FFLs)
 * January 2015 dataset: 78,011 licenses
+* Columns
+```
+LicRegn
+LicDist
+LicCnty
+LicType
+LicXprdte
+LicSeqn
+LicenseName
+BusinessName
+PremiseStreet
+PremiseCity
+PremiseState
+PremiseZipCode
+MailStreet
+MailCity
+MailState
+MailZipCode
+VoicePhone
+```
