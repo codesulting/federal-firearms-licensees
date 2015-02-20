@@ -50,7 +50,7 @@ select count(*), PremiseCity, PremiseState from licensees group by PremiseCity, 
 
 ### To Do
 * Geocode each licensee using the `Premise` address attributes
-* Export the geocoded results as GeoJSON
+* Export the geocoded results as GeoJSON for visualization
 
 ### Data
 * Source: [Listing of Federal Firearms Licensees](http://www.atf.gov/content/firearms/firearms-industry/listing-FFLs)
