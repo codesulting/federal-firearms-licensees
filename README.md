@@ -16,11 +16,12 @@ python csv2sqlite.py
 
 ### Basic Analysis
 * Which 5 U.S. states have the most federal firearms licensees?
-#### Query
+
+##### Query
 ```
 select count(PremiseState), PremiseState from licensees group by PremiseState order by count(PremiseState) Desc limit 5;
 ```
-#### Response
+##### Response
 ```
 7253|TX
 3691|FL
