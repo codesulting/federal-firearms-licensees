@@ -1,0 +1,19 @@
+CREATE TABLE licensees(
+LicRegn TEXT,
+LicDist TEXT,
+LicCnty TEXT,
+LicType TEXT,
+LicXprdte TEXT,
+LicSeqn TEXT,
+LicenseName TEXT,
+BusinessName TEXT,
+PremiseStreet TEXT,
+PremiseCity TEXT,
+PremiseState TEXT,
+PremiseZipCode TEXT,
+MailStreet TEXT,
+MailCity TEXT,
+MailState TEXT,
+MailZipCode TEXT,
+VoicePhone TEXT
+);
