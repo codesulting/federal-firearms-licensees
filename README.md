@@ -64,6 +64,21 @@ select count(*), MailStreet, MailCity, MailState from licensees group by MailStr
 ```
 (Walmart, Walmart and Big 5 Sporting Goods)
 
+#### Question
+Which 3 federal firearms license types are the most issued?
+
+##### Query
+```
+select count(*), LicType from licensees group by LicType order by count(*) Desc limit 3;
+```
+
+##### Response
+```
+55521|01
+10076|07
+8148|02
+```
+(Dealer/Gunsmith, Manufacturer, Pawnbroker)
 
 ### Workflow
 * Create a SQLite database with a `licensees` table
