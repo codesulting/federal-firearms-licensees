@@ -15,7 +15,8 @@ python csv2sqlite.py
 * Explore the data with SQLite queries
 
 ### Basic Analysis
-* Which 5 U.S. states have the most federal firearms licensees?
+#### Question
+Which 5 U.S. states have the most federal firearms licensees?
 
 ##### Query
 ```
@@ -29,7 +30,23 @@ select count(PremiseState), PremiseState from licensees group by PremiseState or
 3005|PA
 2951|OH
 ```
-* Which U.S. cities have the most federal firearms licensees
+
+#### Question
+Which 5 U.S. cities have the most federal firearms licensees
+
+##### Query
+```
+select count(*), PremiseCity, PremiseState from licensees group by PremiseCity, PremiseState order by count(*) Desc limit 5;
+```
+
+##### Response
+```
+391|HOUSTON|TX
+282|PHOENIX|AZ
+217|TUCSON|AZ
+202|SAN ANTONIO|TX
+173|COLORADO SPRINGS|CO
+```
 
 ### To Do
 * Geocode each licensee using the `Premise` address attributes
