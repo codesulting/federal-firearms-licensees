@@ -2,7 +2,7 @@
 
 
 ### Workflow
-* Create a SQLite database and with a `licensees` table
+* Create a SQLite database with a `licensees` table
 ```
 touch dbFFLicensees.sqlite
 sqlite3 dbFFLicensees.sqlite
